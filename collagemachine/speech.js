@@ -3,7 +3,7 @@ let speechRec = new p5.SpeechRec(lang, gotSpeech);
 let continuous = true, interim = true;
 var images = [], bg
 var set = {}
-//加载图片
+//loae image
 function preload() {
   for (let i = 0; i < 94; i++) {
     images.push(loadImage('img/' + (i + 1) + '.png'))
@@ -21,7 +21,7 @@ function setup() {
   noLoop()
 }
 
-//初始化speech.js语音识别接口
+//initialize speech
 function speechInit() {
   speechRec.onResult = function () {
 
@@ -37,12 +37,12 @@ function speechInit() {
   speechRec.onEnd = function () {
     speechRec.start(continuous, interim)
   }
-  speechRec.start(continuous, interim); //开始识别
+  speechRec.start(continuous, interim); //start to recognize
 }
 
-//随机弹出图片在页面上
+///pop image randomly 
 function popImage(idx) {
-  let img = images[idx]
+  let img = images[idx] //image id1..2..3..4..
 
   let minX = windowWidth * 0.30, minY = windowHeight * 0.16
   let maxX = minX + 350, maxY = minY + 320
@@ -50,7 +50,7 @@ function popImage(idx) {
   let y = abs(random(minY, maxY))
   let w = abs(random(150, 200))
   let h = abs(random(150, 200))
-  image(img, x, y, w, h)
+  image(img, x, y, w, h)//size of images
 }
 
 function gotSpeech() {
@@ -60,7 +60,7 @@ function gotSpeech() {
   fill(255);
 }
 
-//从对应关系中匹配语音，匹配到进行弹出图
+//match result with keywords and images
 function wordMatch(speech) {
   console.log(speech)
   let result = []
