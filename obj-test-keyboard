@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<title>three.js webgl - panorama</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+	
+</head>
+
+<body>
+	<template>
+		<div>
+		  <div id="container"></div>
+		</div>
+	  </template>
+	  
+	  <script>
+		      import * as Three from './build/three.module.js';
+		      //import * as Three from 'three'
+		      import {OrbitControls} from './jsm/controls/OrbitControls';
+		      import {OBJLoader} from './data/OBJLoader.js';
+		      import {MTLLoader} from './data/MTLLoader.js';
+		      import { PointerLockControls } from './jsm/controls/PointerLockControls.js';
+		      export default {
+		      name: 'ThreeTest',
+		      data() {
+			  return {
+			  camera: null,
+			  scene: null,
+			  renderer: null,
+			  mesh: null,
+			  controls:"",
+			  intersections:null,
+			  objects : [],
+			  clock:"",
+			  moveForward:false,
+			  moveLeft:false,
+			  moveBackward:false,
+			  moveRightInit:false,
+			  direction : new Three.Vector3(),
+			  velocity : new Three.Vector3(),
+			  prevTime : performance.now()
+			 }
+		      },
+		      methods: {
+			  init: function() {
+			  this.initScene()//场景对象
+			  this.initCamera()//相机
+			  this.initWebGLRenderer()//渲染器
+			  this.initAxisHelper()//辅助坐标
+			  this.render()
+			  this.createControls()//控件对象
+			  this.Box()
+			  this.initControls()//相机视角
+			  this.initPlane()//地板
+			  this.initMobile()//移动
+			  },
+			  //鼠标控制移动相机视角*****
+			  initControls(){
+			  let that=this
+			  that.controls = new PointerLockControls( this.camera, document.body );
+			  var container = document.getElementById( 'container' );
+			  container.addEventListener( 'click', function () {
+				that.controls.lock();
+			  });
+			  this.scene.add(that.controls.getObject() );
+			  },
+			  //移动
+			  initMobile(){
+			  let that=this
+			  console.log(this.controls)
+			  var onKeyDown = function ( event ) {
+	  
+				switch ( event.keyCode ) {
+	  
+				  case 38: // up
+				  case 87: // w
+					that.moveForward = true;
+					break;
+	  
+				  case 37: // left
+				  case 65: // a
+					that.moveLeft = true;
+					break;
+	  
+				  case 40: // down
+				  case 83: // s
+					that.moveBackward = true;
+					break;
+	  
+				  case 39: // right
+				  case 68: // d
+					that.moveRightInit = true;
+					break;
+	  
+				}
+	  
+			  };
+	  
+			  var onKeyUp = function ( event ) {
+	  
+				switch ( event.keyCode ) {
+	  
+				  case 38: // up
+				  case 87: // w
+					that.moveForward = false;
+					break;
+	  
+				  case 37: // left
+				  case 65: // a
+					that.moveLeft = false;
+					break;
+	  
+				  case 40: // down
+				  case 83: // s
+					that.moveBackward = false;
+					break;
+	  
+				  case 39: // right
+				  case 68: // d
+					that.moveRightInit = false;
+					break;
+	  
+				}
+	  
+			  };
+	  
+			  document.addEventListener( 'keydown', onKeyDown, false );
+			  document.addEventListener( 'keyup', onKeyUp, false );
+		       },
+		
+		      var container,control
+
+		      var camera, scene, renderer;
+
+		      var mouseX = 0, mouseY = 0;
+
+		      var windowHalfX = window.innerWidth / 2;
+		      var windowHalfY = window.innerHeight / 2;
+
+
+		      init();
+		      animate();
+
+
+		      function init() {
+
+			  container = document.createElement( 'div' );
+			  document.body.appendChild( container );
+
+			  camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 20000 );
+			  camera.position.z = 1000;
+
+			 // scene
+
+			 scene = new THREE.Scene();
+			 scene.background = new THREE.Color(0x101833);
+			 var ambientLight = new THREE.AmbientLight( 0xcccccc, 1 );
+			 scene.add( ambientLight );
+
+			 var pointLight = new THREE.PointLight( 0xffffff, 1 );
+			 camera.add( pointLight );
+			 scene.add( camera );
+ 
+
+			 // model
+
+			 var onProgress = function ( xhr ) {
+
+				 
+
+			 };
+
+			var onError = function (e) {
+				console.log(e)
+			};
+
+			var manager = new THREE.LoadingManager();
+		 
+
+			new MTLLoader( manager )
+					.setPath( 'data/' )
+					.load( 'toycar.mtl', function ( materials ) {
+
+						materials.preload();
+
+						new OBJLoader( manager )
+								.setMaterials( materials )
+								.setPath( 'data/' )
+								.load( 'toycar.obj', function ( object ) {
+
+									object.position.y = - 95;
+									scene.add( object );
+
+								}, onProgress, onError );
+
+					} );
+
+			//
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			container.appendChild( renderer.domElement );
+			 
+
+		}
+ 
+
+		//
+
+		function animate() {
+
+			requestAnimationFrame( animate );
+			render();
+
+		}
+
+		function render() {
+
+			  
+			renderer.render( scene, camera );
+
+		}
+	  
+			  //从这开始下面**就是控制移动的代码
+			  let time = performance.now();
+			  let delta = ( time - that.prevTime ) / 1000;
+	  
+			  that.velocity.x -= that.velocity.x * 10.0 * delta;
+			  that.velocity.z -= that.velocity.z * 10.0 * delta;
+	  
+			  that.direction.z = Number( that.moveForward ) - Number( that.moveBackward );
+			  that.direction.x = Number( that.moveRightInit ) - Number( that.moveLeft );
+	  
+			  that.velocity.z -= that.direction.z * 400.0 * delta;
+			  that.velocity.x -= that.direction.x * 400.0 * delta;
+	  
+			  //下面两个&&是判断是否有moveRight。如果有就执行。不然没加载完毕，就循环执行会报错
+			  that.controls && that.controls.moveRight(- that.velocity.x * delta)
+			  that.controls && that.controls.moveForward(- that.velocity.z * delta)
+			  that.prevTime = time;
+			 },
+			// 创建控件对象
+			createControls () {
+			  this.controls = new OrbitControls(this.camera,this.renderer.domElement)
+			}
+	  
+		  },
+		  mounted() {
+			this.init();
+			this.render();
+		  }
+
+	</script>
+</body>
+		  
+</html>
