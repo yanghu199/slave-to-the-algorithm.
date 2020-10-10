@@ -252,6 +252,7 @@
 		  mounted() {
 			this.init();
 			this.render();
+			//code reference:https://blog.csdn.net/qq_41960265/article/details/108470700?utm_medium=distribute.pc_relevant_download.none-task-blog-baidujs-1.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-baidujs-1.nonecase
 		  }
 
 	</script>
