@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-image: url(./img/bg.gif);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    a {
+      font-size: 14px;
+      background: blue;
+      color: #fff;
+      padding: 1px 9px;
+    }
+  </style>
+</head>
+
+
+<script>
+  var a1, a2, a3;
+
+function setup() {
+  noCanvas();
+  //createCanvas(windowWidth, windowHeight);
+  //createCanvas(windowWidth,windowHeight);
+  //background(0);
+ //image(gif_loadImg,windowWidth,windowHeight);
+ //gif_createImg.position(0,0);
+
+    let halfWidth = windowWidth / 2
+    let halfHeight = windowHeight / 2
+    a1 = createA('https://yanghu199.github.io/slave-to-the-algorithm./collagemachine', 'click me');
+    a2 = createA('https://yanghu199.github.io/slave-to-the-algorithm./voice-library', 'click me');
+    a3 = createA('https://yanghu199.github.io/slave-to-the-algorithm./3d-fbx-test/', 'click me');
+    a1.position(halfWidth - 40, halfHeight)
+    a2.position(halfWidth + 270, halfHeight - 15)
+    a3.position(halfWidth - 370, halfHeight + 300)
+  }
+
+  
+</script>
+
+</html>
