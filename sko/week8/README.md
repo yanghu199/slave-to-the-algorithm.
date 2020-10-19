@@ -117,9 +117,11 @@ It failed. 'Uncaught ReferenceError: keyword is not defined at wordMatch (speech
 something wrongs with the match function. And obviously I couldn't use the specific keyword for 'let words' because I had nearly 200-300 keywords and 94 images !! I needed to find some more efficient method. 
 
 For my 3d library, I followed the tutorial in youtube to learn how to input model with three.js. but also failed...
+
 'Failed to load resource: the server responded with a status of 404 (Not Found)'
-my code: https://github.com/yanghu199/test/tree/main/obj-test-norotate
 
 Then I looked back to the tutorial and noticed he put his three.model.js into the build folder. Initially I thought I could change the folder name and just typed it in './xxx.obj', but seemed like everyone all used the folder name 'build'. Therefore I put it in the 'build' folder, and it worked!!
+
+my code: https://github.com/yanghu199/test/tree/main/obj-test-norotate
 
 
