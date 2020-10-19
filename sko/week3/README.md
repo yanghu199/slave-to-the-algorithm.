@@ -39,4 +39,6 @@ https://ifworlddesignguide.com/entry/208077-future-lab-program-t
 
 This “T” program in Sony future lab supports a multiple experiences with physical storybooks, which invites participants to interact with those animations that the projector   provides. The form of future digital artist books might look similar with the “T” project and I believe it still has infinite possibilities to explore.
 
+![IMG_2087](https://user-images.githubusercontent.com/68723373/96473228-f49e2800-1263-11eb-9d60-b03308cdea80.GIF)
+
 
