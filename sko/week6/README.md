@@ -4,6 +4,12 @@ Paper prototype game
 
 https://www.google.com/search?q=neo+bomberman&sxsrf=ALeKk01hRfVM1edUOe3VpTwgsokBVoCpKA:1598580615988&source=lnms&tbm=isch&sa=X&ved=2ahUKEwir24ru6LzrAhWzxzgGHSzRDPsQ_AUoAXoECCQQAw&biw=2305&bih=1216&dpr=1
 
+![IMG_3984](https://user-images.githubusercontent.com/68723373/96475985-4300f600-1267-11eb-8313-b3274c7f5a5e.GIF)
+
+my paper prototype
+
+![IMG_3985](https://user-images.githubusercontent.com/68723373/96476129-6f1c7700-1267-11eb-8e4e-de3687bef474.GIF)
+
 We started with the warmup prototype making and the paper prototype is the easiest way for manipulating and visualizing the rough idea. We decided to do the Neo bomberman and I make some extra removable props to enhance the playability. Besides, it’s interesting to see that we made 3 different versions with the same game, same logic but completely diverse outcomes. When we displayed our prototypes, Andy pointed out a detailed problem but has a great influence on the experience of presentation ——  turn your prototype around and face the person you are talking to. It provides a more immersing experience for audience.
 
 Input voice document
@@ -70,6 +76,12 @@ https://p5js.org/reference/#/p5/loadModel
 
 3d objects scanning 
 Then I started to concentrate on how to use Qlone which supports the phone’s camera to scan the object with the horizontal and vertical map for the background. Compared with other 3d photoscanning applications(only supplied by iPhoneX,XR which has an AR camera), the operating system is more complicated; hence the results are more accurate.
+
+![IMG_2647 3](https://user-images.githubusercontent.com/68723373/96476681-21ecd500-1268-11eb-989d-875a8b020754.PNG)
+
+![IMG_2648](https://user-images.githubusercontent.com/68723373/96476403-b99df380-1267-11eb-844a-c5b2b5cd5ff7.PNG)
+
+![IMG_3986](https://user-images.githubusercontent.com/68723373/96476617-097cba80-1268-11eb-8386-f147b4bfe9a5.PNG)
 
 
 Paper prototype
