@@ -60,6 +60,8 @@ week3
 
 ![IMG_1983](https://user-images.githubusercontent.com/68723373/96459140-5787c300-1254-11eb-8006-d05034616c9c.JPG)
 
+![-F31CBA3739A4](https://user-images.githubusercontent.com/68723373/96461891-83f10e80-1257-11eb-8d2a-8e1efa4083b3.JPG)
+the outcome from the drawing machine
 
 Make up this activity for week2! I was inspired by my painting elective and wondered what about established an abstract painting system? As we needed to set up in processing before the main orders, I created a color pick-up system and divided the canvas into 6 pieces in order to build the coordinate. Moreover, a material pick-up system was also essential. After finished all basic settings, I started to classify contents by human or non-human objects. In human category I selected gender/ages/movement/clothes and for non-human I got 5 sorts of stuffs : botany/building/artifact/animal/fruit.
 
@@ -71,8 +73,13 @@ https://crosscut.com/2018/11/seattle-galleries-art-meets-climate-change
 
 I was impressed by Margie’s unique drawing method, which was presented her communication with earth intensely.  Rather than express what she feels and thoughts, Margie chooses to receive the emotion from nature. A number of parodic elements are going on here: the regional obsession with nature in the wild; a religious devotion to painting, as if the artist were undergoing penitence on the trail; and the somber tradition of minimalism. 
 
-After Karen introduced some automatically painting installations, we started to create our own machine. I wondered that what stuffs in my apartment could provide the motive power.  Obviously, my naughty little kitty could fit that character perfectly. Initially, I decided to use pigments to present her footprints. Meanwhile, I noticed that she was kept licking her arms and legs; therefore it was not appropriate. Then I used double side type to stick a charcoal on her leg and put her into a box that had no covering. She wasn’t cooperative at all and struggled with that charcoal and attempted to get rid of it in the whole process.(much harder than I imagined) The outcome was quite random and more like a sketch from a psychopath. Anyway I appreciated your help eggy:)
+<img width="361" alt="cat1" src="https://user-images.githubusercontent.com/68723373/96461613-2e1c6680-1257-11eb-863f-af47806103b5.png">
 
+<img width="336" alt="cat2" src="https://user-images.githubusercontent.com/68723373/96461645-35dc0b00-1257-11eb-9101-08003bb45319.png">
+
+<img width="317" alt="cat3" src="https://user-images.githubusercontent.com/68723373/96461712-4be9cb80-1257-11eb-90ce-dee8782f57c5.png">
+
+After Karen introduced some automatically painting installations, we started to create our own machine. I wondered that what stuffs in my apartment could provide the motive power.  Obviously, my naughty little kitty could fit that character perfectly. Initially, I decided to use pigments to present her footprints. Meanwhile, I noticed that she was kept licking her arms and legs; therefore it was not appropriate. Then I used double side type to stick a charcoal on her leg and put her into a box that had no covering. She wasn’t cooperative at all and struggled with that charcoal and attempted to get rid of it in the whole process.(much harder than I imagined) The outcome was quite random and more like a sketch from a psychopath. Anyway I appreciated your help eggy:)
 
 About pitch
 
@@ -94,6 +101,8 @@ After interpreted my rough idea about the narrative artist book with Karen, she 
 
 For hunted and grabbed some inspirations about the theme for my system, I kept searching in Tate and MoMA’s website and an article suddenly engaged my attention, which critically discussed the relationship between human and physical substances. I always obsessed with curiosities and something weird, particularly focus on the personal stories or significance behind them. A number of artists already made lots of extraordinary artworks regarding this topic and some of them emphasis on how consumerism impact our personal belongings like Michael Landy, who famously destroyed everything he owned as a piece of performance art.
 
+![IMG_3982](https://user-images.githubusercontent.com/68723373/96462740-82741600-1258-11eb-823e-aeccddb5f1c1.GIF)
+
  “The insistent pressures on people to consume have become more and more present in our culture, and there is an increasing feeling of discomfort about how alienating these pressures can be. Michael, through Break Down, put his finger on a deeply troubling part of our contemporary condition.” 
 
 https://www.bbc.com/culture/article/20160713-michael-landy-the-man-who-destroyed-all-his-belongings
@@ -102,14 +111,25 @@ And also I found an artist who explore the conventions of archiving, exhibition 
 
 https://www.tate.org.uk/whats-on/tate-britain/exhibition/art-now-goshka-macuga/objects-relation-essay
 
+
+![goshka macuga objects in relation_crop image 2007](https://user-images.githubusercontent.com/68723373/96463190-08905c80-1259-11eb-9548-8635eac04c74.jpg)
+
+![goshka_macuga_objects_in_relation_2007](https://user-images.githubusercontent.com/68723373/96463217-0deda700-1259-11eb-8605-83998e4c984a.jpg)
+
+
 I was interesting in how she recombined and displayed those objects and we had a common focus point ——  stories attached to individuals!  It inspired me that if I use a system instead of human logic to do the selection and combination of people’s items, what will happen? When goshka recombined those items, it presents a diversity meaning which different from the original one. And I start to wonder if the system become a decider, can it provide a new understanding in relationship between human and objects. 
 
 Therefore an online personal meaningful / special / weird belongings library was my initial idea that participants can upload image/text/video/sound for their items and the system will establish a 3d model for them and everyone can see the stories behind these items. However, only one function was not enough if I want to explore the relationship deeply. Through continually researching, I found an artist who believed that physical reality can be replaced by digital reality. 
+
+
+![IMG_2291](https://user-images.githubusercontent.com/68723373/96463595-7472c500-1259-11eb-82af-0a8ae5fe49bc.PNG)
 
 “Gyonyoung Yoon’s project is about the change in perception that digital technology has brought to her life. When Yoon began living way from home, she faced a problem that she had never had before – to find a place where she belongs. Yoon struggled to make a home in physical reality for a long time, but she failed, so she came up with a solution of making a home in digital reality and it has been successful. Now, Yoon have her own sanctuary. She no longer feels detached. With this experience, she believes that physical reality can be replaced by digital reality. Yoon realised ‘home’ exists where her mind is, not where her body is.” 
 
 I was inspired by the way that she combined the digital principles with her reality life and her emotion. She finds a real “home”in digital world and physicality does not affect the perception towards existence anymore. It gives me a new perspective of comprehending how digital world affect people’s physical life and emotion and I believe that will be a great starting point.
 
-After email with Karen, she suggested me that this system could be an “emotion tracking and mapping machine”. Basically, users can upload their image/sound/video/text which they believe can present a kind of their emotion to this platform, those materials will be classified and recorded in the data library. and through the search bar, users can enter their affective needs And machine will respond it with resource in data library. With the Augmented Reality, users will have a virtual world that can reflect their spiritual needs. It seems like we have conversation with the system but actually we are talking to some physical substances that upload by other users. The machine provides a new understanding of how physical substances affect our emotion and reserve story. Also it use an objective intellection to build connection between each users with emotion visualization. 
+After email with Karen, she suggested me that this system could be an “emotion tracking and mapping machine”. Basically, users can upload their image/sound/video/text which they believe can present a kind of their emotion to this platform, those materials will be classified and recorded in the data library. and through the search bar, users can enter their affective needs And machine will respond it with resource in data library. 
+
+With the Augmented Reality, users will have a virtual world that can reflect their spiritual needs. It seems like we have conversation with the system but actually we are talking to some physical substances that upload by other users. The machine provides a new understanding of how physical substances affect our emotion and reserve story. Also it use an objective intellection to build connection between each users with emotion visualization. 
 
 
