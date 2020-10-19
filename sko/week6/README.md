@@ -84,8 +84,9 @@ Then I started to concentrate on how to use Qlone which supports the phone’s c
 ![IMG_3986](https://user-images.githubusercontent.com/68723373/96476617-097cba80-1268-11eb-8386-f147b4bfe9a5.PNG)
 
 
-Paper prototype
+I also made a paper prototype for my 'mirror' function
 
+![IMG_3987](https://user-images.githubusercontent.com/68723373/96477800-80ff1980-1269-11eb-8c4b-b3e08c3a7eb4.GIF)
 
 
 Research for 3d library spatial mapping
@@ -97,4 +98,4 @@ https://tonite.dance/
 It’s really interesting to see the magnify function which give users various experience angle. 
 
 
-https://www.youtube.com/watch?v=1TeMXIWRrqE
+
