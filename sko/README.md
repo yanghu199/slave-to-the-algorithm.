@@ -58,6 +58,9 @@ week3
 
 12 hours challenge
 
+![IMG_1983](https://user-images.githubusercontent.com/68723373/96459140-5787c300-1254-11eb-8006-d05034616c9c.JPG)
+
+
 Make up this activity for week2! I was inspired by my painting elective and wondered what about established an abstract painting system? As we needed to set up in processing before the main orders, I created a color pick-up system and divided the canvas into 6 pieces in order to build the coordinate. Moreover, a material pick-up system was also essential. After finished all basic settings, I started to classify contents by human or non-human objects. In human category I selected gender/ages/movement/clothes and for non-human I got 5 sorts of stuffs : botany/building/artifact/animal/fruit.
 
 Class activity
