@@ -2,6 +2,39 @@ Week8
 
 In this week we were introduced speech.js, a really excited function. Basically it will translate your speech into text in screen, obviously it will create some wonderful results with combining stuffs like what we learned last week ‘wiggle letters’ or ‘draw with images ‘ some sort of things like that. 
 
+Based on the code from shuchen, karen tried to create the code by herself. In this process she created a really interesting and cool one accidentally!(accident sometimes bring surprise!!)(I REALLY LIKE THIS ONE! and saw lots of potentials which could be further developed to something really fun! like it can be combined with projector and presented how many nonsenses we spoke everyday!)
+
+<img width="597" alt="屏幕快照 2020-10-20 上午1 24 37" src="https://user-images.githubusercontent.com/68723373/96490176-0c30dd00-1273-11eb-8faa-0ce61b74039d.png">
+
+here was the code:
+
+let lang = navigator.language || 'en-US';
+ let speechRec = new p5.SpeechRec(lang, gotSpeech);
+ let continuous = true;
+ let interim = true;
+
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+  background(0);
+  speechRec.start(continuous,interim);
+}
+
+
+function draw() {
+gotSpeech();
+}
+
+function gotSpeech(){
+   if(speechRec.resultValue){
+      createP(speechRec.resultString); 
+    }
+    fill(255);
+    text(speechRec,width/2,height/2);
+  
+}
+
+After debugged some mistakes, we got the workable one:
+
 let lang = navigator.language || 'en-US';
 let speechRec = new p5.SpeechRec(lang, gotSpeech);
 let continuous = true;
@@ -37,7 +70,101 @@ function gotSpeech(){
  
   }
 
-Here is the basic coding without any interactions, just like a subtitle. It makes me reminds the subtitles in youtube and Siri. It inspired me that what if I use speech rather than text for the input of my collage machine ? Directly mix the search function with speech.js together is not working, I need to let input = speechRec.resultValue , and a function like keyword matching?? ,and let word = speechRec.resultValue, word match with speech, and pop images. 
+Here is the basic coding without any interactions like a subtitle.
+
+After that, karen tried to make a hybird between the previous code 'wiggle letters' with speech.js
+
+var xPosition, yPosition,size,rand,letter,speed;
+ var letterCount=0;
+ var sentence = [];
+ var wigglyLetters = [];
+ 
+ let lang = navigator.language || 'en-US';
+ let speechRec = new p5.SpeechRec(lang, gotSpeech);
+ let continuous = true;
+ let interim = true;
+ var runningText;
+ 
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+  background(0);
+  textSize(32);
+  fill(255);
+  textFont("Times");
+  xPosition = 100;
+  yPosition = 100;
+  speechRec.onResult = showResult;
+  speechRec.start(continuous,interim);
+  fill(120);
+  text("say something...",50,height/2);
+}
+
+
+function draw() {
+  background(0);
+  fill(255,0,0);
+ // gotSpeech();
+//test(runningText, 0,0);
+// for (var i=0; i<wigglyLetters.length ; i++){
+    //wigglyLetters[i].wiggle();
+   // wigglyLetters[i].display();
+}
+
+function showResult(){
+ if (speechRec.resultValue === true) {
+   //background(0);
+   textSize(72);
+   fill(255);
+   sentence = speechRec.resultString;
+   text(speechRec.resultString,50,50,windowWidth-100,windowHeight);
+}
+}
+
+function mousePressed(){
+   rand = int(random(65,160));
+   letter = char(int(random(60,160))));
+   size= int(random(6,96));
+   speed=int(random(1,4));
+   wigglyLetters.push(new Wiggle (mouseX, mouseY, size, letter, speed));
+   if (letterCount<sentence.length){
+     letterCount++;
+} else {
+  letterCount = 0;
+}  
+ }
+ class Wiggle {
+ constructor(x, y, size, letter, speed){
+   this.x= x;
+   this.y= y;
+   this.textSize=size;
+   this.letter=letter;
+   this.speed=speed;
+ }
+
+ wiggle() {  //randomwalker
+   // x+=4  add 4 to the variable
+   speed = map(mouseX,0,windowHeight,0,10);
+   this.x += random(-this.speed, this.speed);
+   this.y += random (-this.speed, this.speed);
+ }
+ display() {
+   textSize(this.textSize);
+   text(this.letter, this.x, this.y);
+ }
+}
+
+
+function gotSpeech(){
+   if(speechRec.resultValue === true){
+    createP(speechRec.resultString);
+    }
+    fill(255);
+   runningTest=speechRec;
+  
+}
+
+
+It inspired me that what if I use speech rather than text for the input of my collage machine ? Directly mix the search function with speech.js together is not working, I need to let input = speechRec.resultValue , and a function like keyword matching?? ,and let word = speechRec.resultValue, word match with speech, and pop images. 
 
 let lang = navigator.language || 'en-US';
 let speechRec = new p5.SpeechRec(lang, gotSpeech);
