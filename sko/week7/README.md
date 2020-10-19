@@ -218,3 +218,9 @@ class Wiggle {
    text(this.letter, this.x, this.y);
  }
 }
+
+For my voice library, I tried to import my local obj file and play with the angle of ratation. Meanwhile, I collected some images and recordings from my friends and strangers on Instagram. It's really interesting and meaningful to hear someone interpreted and described their memories and stories behind those items and what kind of emotion did the item brings to them. 
+
+<img width="1362" alt="屏幕快照 2020-10-14 下午8 24 21" src="https://user-images.githubusercontent.com/68723373/96479661-d76d5780-126b-11eb-8e7a-3382d0165c03.png">
+
+
