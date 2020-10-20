@@ -29,5 +29,289 @@ I also came to ask my friend who learned coding before for help and she suggeste
 
 so image1,2,3,4... can be represented as 'idx'. 
 
+<img width="859" alt="屏幕快照 2020-10-20 下午6 40 20" src="https://user-images.githubusercontent.com/68723373/96575773-ca9c4280-1303-11eb-91b1-328f7991c0f8.png">
+
+<img width="314" alt="屏幕快照 2020-10-20 下午6 40 43" src="https://user-images.githubusercontent.com/68723373/96575765-c7a15200-1303-11eb-890d-10e78e824651.png">
+
+I tried to combine mine:
+
+    for (let i = 0; i < keywords.length; i++) {
+    let words = keywords[i].keyword
+    let idx = keywords[i].id
+    
+ so one keywords[i]linked with the word, and the other linked with images. the next step was the match 
+ 
+      let m = match(speech, words)
+      if (m) {
+        popImage(idx)
+        }
+        
+<img width="732" alt="屏幕快照 2020-10-20 下午7 44 45" src="https://user-images.githubusercontent.com/68723373/96581669-c0327680-130c-11eb-9f8a-fc5c5773de27.png">
+
+something wrong with the width... but at least the image pop up finally!!! the next step was fixed the windowWidth and windowHeight to make them pop up in the mirror.
+
+
+3d library development
+
+I tried to use another control code in github and combined my part of importing model code:
+
+      function ss() {
+			var blocker = document.getElementById('blocker');
+			var instructions = document.getElementById('instructions');
+			instructions.addEventListener('click', function () {
+				controls.lock();
+			}, false);
+			controls.addEventListener('lock', function () {
+				instructions.style.display = 'none';
+				blocker.style.display = 'none';
+			});
+			controls.addEventListener('unlock', function () {
+				blocker.style.display = 'block';
+				instructions.style.display = '';
+			});
+			scene.add(controls.getObject());
+			var onKeyDown = function (event) {
+				switch (event.keyCode) {
+					case 38:
+						moveUp = true;
+						break;
+					case 40:
+						moveDown = true;
+						break;
+					case 87: // w
+						moveForward = true;
+						break;
+					case 65: // a
+						moveLeft = true;
+						break;
+					case 83: // s
+						moveBackward = true;
+						break;
+					case 68: // d
+						moveRight = true;
+						break;
+					case 32: // space
+						if (canJump === true) velocity.y += 350;
+						canJump = false;
+						break;
+				}
+			};
+
+			var onKeyUp = function (event) {
+
+				switch (event.keyCode) {
+					case 38:
+						moveUp = false;
+						break;
+					case 40:
+						moveDown = false;
+						break;
+					case 87: // w
+						moveForward = false;
+						break;
+					case 65: // a
+						moveLeft = false;
+						break;
+					case 83: // s
+						moveBackward = false;
+						break;
+					case 68: // d
+						moveRight = false;
+						break;
+				}
+			};
+			document.addEventListener('keydown', onKeyDown, false);
+			document.addEventListener('keyup', onKeyUp, false);
+		}
+    
+  and import fbx:
+  
+      function init() {
+
+			var container = document.getElementById('container');
+
+			renderer = new THREE.WebGLRenderer({ antialias: true });
+			renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			container.appendChild(renderer.domElement);
+
+			camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 200);
+			camera.position.y = -20;
+			scene = new THREE.Scene();
+			scene.background = new THREE.Color(0xffffff);
+
+			var light = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75);
+			light.position.set(1.5, 0.45, 0.75);
+			scene.add(light);
+			scene.add(new THREE.AmbientLight(0xEE7AE9));
+
+			// controls
+			controls = new PointerLockControls(camera, document.body);
+			ss();
+
+
+			var loader = new FBXLoader();
+			loader.load('fbx/cactus.fbx', function (object) {
+				object.scale.multiplyScalar(0.01)
+				scene.add(object);
+				document.getElementById('loading').innerHTML = 'Model Load Successfully. Click to view'
+			});
+
+
+			window.addEventListener('resize', onWindowResize, false);
+			window.velocity = velocity;
+		}
+
+		function onWindowResize() {
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize(window.innerWidth, window.innerHeight);
+		}
+
+
+and the control part: 
+
+      function animate() {
+
+			requestAnimationFrame(animate);
+			// controls.update(); // required when damping is enabled
+			if (controls.isLocked === true) {
+
+
+				var time = performance.now();
+				var delta = (time - prevTime) / 500;
+
+				velocity.x -= velocity.x * 10.0 * delta;
+				velocity.z -= velocity.z * 10.0 * delta;
+				velocity.y -= velocity.y * 10.0 * delta;
+
+				direction.z = Number(moveForward) - Number(moveBackward);
+				direction.x = Number(moveRight) - Number(moveLeft);
+				direction.y = Number(moveDown) - Number(moveUp);
+				direction.normalize(); // this ensures consistent movements in all directions
+
+				if (moveForward || moveBackward) velocity.z -= direction.z * 10.0 * delta;
+				if (moveLeft || moveRight) velocity.x -= direction.x * 10.0 * delta;
+				if (moveUp || moveDown) velocity.y -= direction.y * 10.0 * delta;
+
+				controls.moveRight(- velocity.x * delta);
+				controls.moveForward(- velocity.z * delta);
+
+				controls.getObject().position.y += (velocity.y * delta); // new behavior
+
+				prevTime = time;
+
+			}
+
+			renderer.render(scene, camera);
+
+		}
+    
+ I also tried this for another version:
+ 
+            this.update = function( delta ) {
+
+            if ( this.enabled === false ) return;
+
+            if ( this.heightSpeed ) {
+
+                var y = THREE.Math.clamp( this.object.position.y, this.heightMin, this.heightMax );
+                var heightDelta = y - this.heightMin;
+
+                this.autoSpeedFactor = delta * ( heightDelta * this.heightCoef );
+
+            } else {
+
+                this.autoSpeedFactor = 0.0;
+
+            }
+
+            var actualMoveSpeed = delta * this.movementSpeed;
+
+            if ( this.moveForward || ( this.autoForward && !this.moveBackward ) ) this.object.translateZ( - ( actualMoveSpeed + this.autoSpeedFactor ) );
+            if ( this.moveBackward ) this.object.translateZ( actualMoveSpeed );
+
+            if ( this.moveLeft ) this.object.translateX( - actualMoveSpeed );
+            if ( this.moveRight ) this.object.translateX( actualMoveSpeed );
+
+            if ( this.moveUp ) this.object.translateY( actualMoveSpeed );
+            if ( this.moveDown ) this.object.translateY( - actualMoveSpeed );
+
+            var actualLookSpeed = delta * this.lookSpeed;
+
+            if ( !this.activeLook ) {
+
+                actualLookSpeed = 0;
+
+            }
+
+            var verticalLookRatio = 1;
+
+            if ( this.constrainVertical ) {
+
+                verticalLookRatio = Math.PI / ( this.verticalMax - this.verticalMin );
+
+            }
+
+            this.lon += this.mouseX * actualLookSpeed;
+            if( this.lookVertical ) this.lat -= this.mouseY * actualLookSpeed * verticalLookRatio;
+
+            this.lat = Math.max( - 85, Math.min( 85, this.lat ) );
+            this.phi = THREE.Math.degToRad( 90 - this.lat );
+
+            this.theta = THREE.Math.degToRad( this.lon );
+
+            if ( this.constrainVertical ) {
+
+                this.phi = THREE.Math.mapLinear( this.phi, 0, Math.PI, this.verticalMin, this.verticalMax );
+
+            }
+
+            var targetPosition = this.target,
+                position = this.object.position;
+
+            targetPosition.x = position.x + 100 * Math.sin( this.phi ) * Math.cos( this.theta );
+            targetPosition.y = position.y + 100 * Math.cos( this.phi );
+            targetPosition.z = position.z + 100 * Math.sin( this.phi ) * Math.sin( this.theta );
+
+            this.object.lookAt( targetPosition );
+
+        };
+
+
+        this.domElement.addEventListener( 'contextmenu', function ( event ) { event.preventDefault(); }, false );
+
+        this.domElement.addEventListener( 'mousemove', bind( this, this.onMouseMove ), false );
+        this.domElement.addEventListener( 'mousedown', bind( this, this.onMouseDown ), false );
+        this.domElement.addEventListener( 'mouseup', bind( this, this.onMouseUp ), false );
+
+        window.addEventListener( 'keydown', bind( this, this.onKeyDown ), false );
+        window.addEventListener( 'keyup', bind( this, this.onKeyUp ), false );
+
+        function bind( scope, fn ) {
+
+            return function () {
+
+                fn.apply( scope, arguments );
+
+            };
+
+        };
+
+        this.handleResize();
+
+    };
+
+    };
+    
+ reference : https://github.com/mathisonian/three-first-person-controls/blob/master/index.js
+ https://github.com/mrdoob/three.js/blob/master/examples/js/controls/FirstPersonControls.js
+ https://github.com/dotnet-websharper/threejs.firstpersoncontrols
+ 
+ my small fbx test code:https://github.com/yanghu199/test/tree/main/small-fbx-test-keyboard
+ and it worked!! finally!!
+ 
+
 
 
