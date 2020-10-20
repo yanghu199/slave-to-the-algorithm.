@@ -15,6 +15,11 @@ For the sound library, i’m collecting short answers from others that respond t
 
 Karen suggested that it’s better to upload the original obj file into the web. In order to achieve that, I needed to reduce the size of all models. The panorama gram could be the plan B just in case the model didn’t work. In group discussion, KaiQi had some visual advice for the collage machine. Rather than multi-canvas, she thought a main and center canvas could concentratedly present the images better and had a more distinct structure. 
 
+<img width="384" alt="屏幕快照 2020-10-20 下午4 33 16" src="https://user-images.githubusercontent.com/68723373/96584181-7186db80-1310-11eb-96cd-a1fc1ef54d7f.png">
+the final visual prototype of collage machine
+
+that's looked much better!
+
 
 Afternoon class 
 
