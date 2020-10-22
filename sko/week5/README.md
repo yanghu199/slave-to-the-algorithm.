@@ -22,6 +22,24 @@ practicable plan
 
 The initial function of this machine involved online substances library, search bar and AR. To translate the 2d photo into 3d modeling, the critical component of this process is combined the system with 3d photoscan or Autodesk 123D Catch. And I also find that there are a couple of applications in App Store which support scanning objects and generate 3d modeling automatically. (Qlone) the problem is how to connect these scanning applications with my website and data library.
 
+research & inspiration of 3d items library
+
+<img width="415" alt="sy2" src="https://user-images.githubusercontent.com/68723373/96850993-12e56d00-148a-11eb-9178-1ab037990741.png">
+“ÎÔ”，Kunstraum Dornbirn，2019
+
+<img width="415" alt="sy1" src="https://user-images.githubusercontent.com/68723373/96851067-2f81a500-148a-11eb-95b2-0fd6c4eadde8.png">
+“Chaussures italiennes” installation view at Istituto Svizzero, Rome, 2019
+
+<img width="415" alt="sy3" src="https://user-images.githubusercontent.com/68723373/96851170-517b2780-148a-11eb-972f-f10522f5e7c1.png">
+Giulietta (7/24), 2010
+
+'Sylvie Fleury is a Swiss contemporary pop artist known for her installations, sculpture, and mixed media. Her work generally depicts objects with sentimental and aesthetic attachments in consumer culture, as well as the paradigm of the new age, with much of her work specifically addressing issues of gendered consumption and the fetishistic relationships to consumer objects and art history'
+
+In one of her artwork 'Eye Shadows', she questioned herself :' Am I unhealthily obsessed with painting my face? Or maybe I'm not appreciating how much beauty exists within the product itself? Are haul photos making me high? Do I have a Tom Ford lipstick fetish? Am I assigning value and meaning to bronzer based on its shiny black package? Do the round symmetrical shapes of the palettes signify some perfection I'll never attain?' It reminded me a sentence for decribing this emotion: the sex appeal of the inorganic
+
+reference: https://www.moma.org/artists/7674
+http://www.artnet.com/artists/sylvie-fleury/
+
 
 New idea
 
