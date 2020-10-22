@@ -1,7 +1,8 @@
 week1
 
-This was my first time coming into contact with generative design and programming and Karen showed us some extraordinary interaction examples that all combined coding and visual art perfectly. One of my favorite projects is “I Said If”by Lia, the device she displays on the website which reminds me of the working theory of refractor. 
+research regarding generative design
 
+This was my first time coming into contact with generative design and programming and Karen showed us some extraordinary interaction examples that all combined coding and visual art perfectly. One of my favorite projects is “I Said If”by Lia, the device she displays on the website which reminds me of the working theory of refractor. 
 
 ![isaidif_001-1](https://user-images.githubusercontent.com/68723373/96445065-dfb09d00-1241-11eb-99dd-2d6a1cfd3287.jpg)
 
@@ -14,6 +15,19 @@ https://www.liaworks.com/theprojects/i-said-if/
 “Workout computer”is a project that literally can turn your office work into an intense exercise, not in the gym but can be in your studio or house. The combination of a series of punching bags and computers really inspired me that maybe I can bring together the algorithm and the mixed media in my final project.
 “The project is tied to the Istanbul Biennial's general theme of The Future Is Not What It Used To Be. Bless's computer examines the progression of digital technologies, suggesting that in creating devices that continually make life easier and more sedentary, developers and their work run contrary to other aspects of human existence. "It totally blanks out the physical needs we have," says Heiss. "What we exhibited in Istanbul is what we consider a good prototype for another idea of work."
 https://www.disegnodaily.com/article/bless-s-workout-computer
+
+<img width="415" alt="mask1" src="https://user-images.githubusercontent.com/68723373/96857055-20eabc00-1491-11eb-8abe-2bd13534b105.png">
+
+<img width="415" alt="mask3" src="https://user-images.githubusercontent.com/68723373/96857060-22b47f80-1491-11eb-8fd8-0a06e273fc90.png">
+
+<img width="415" alt="mask2" src="https://user-images.githubusercontent.com/68723373/96857063-247e4300-1491-11eb-876b-17c549bc5ae0.png">
+
+'Vidiam is a CARAPACE PROJECT product.
+
+Contemporary scientific and technological research are changing the way man relates to his body. Synthetic biology, advanced prosthetics, biohacking let imagine future scenarios of physical transformation and redefinition, aesthetic and performative. In this direction, Carapace is a possible evolution of the human body in which rigid elements similar to crustaceans' and insects' exoscheletons integrate and transform sensory districts: eyes, ears, nose, mouth. The masks collection Carapace is inspired by this vision: fossiles of a possible future, once worn these objects blur the limit between natural extension and artificial prosthesis. The Carapace pattern is inspired by the microstructure of crustaceans' and insects' exoscheletons. Biodigitally grown through a generative simulation, it differentiates objects' areas allowing to modulate their structure, stiffness, permeability.'
+
+http://mhoxdesign.com/carapace_vidiam-en.html
+
 
 <img width="916" alt="屏幕快照 2020-07-24 上午11 35 00" src="https://user-images.githubusercontent.com/68723373/96440898-2bac1380-123b-11eb-9bca-2faddb230592.png">
 
