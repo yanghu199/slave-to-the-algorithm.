@@ -15,7 +15,7 @@ The original model was made in the situation without consideration reagarding th
 ![3dlibrarys5](https://user-images.githubusercontent.com/68723373/96844220-d7df3b80-1481-11eb-8750-3816cabc3a0e.png)
 the final outcomes of 3d library
 
-Another problem I had was when I uploaded the model, I couldn't see it. This situation happened basic on my coding was worable(I used the fbx from internet to text and it worked). Still, something wrong with model. I done a quickly research regarding the probably reason that could cause model disappear and notice one element that TOTALLY be ingored : the position of the model!! 
+Another problem I had was when I uploaded the model, I couldn't see it. This situation happened basic on my coding was workable(I used the fbx from internet to text and it worked). Still, something wrong with model. I done a quickly research regarding the probably reason that could cause model disappear and notice one element that TOTALLY be ingored : the position of the model!! 
 
 <img width="123" alt="屏幕快照 2020-10-22 下午4 29 17" src="https://user-images.githubusercontent.com/68723373/96845880-c5660180-1483-11eb-8081-4dcb712584d9.png">
 
