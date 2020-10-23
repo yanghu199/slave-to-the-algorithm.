@@ -1,8 +1,8 @@
 Week8 
 
-In this week we were introduced speech.js, a really excited function. Basically it will translate your speech into text in screen, obviously it will create some wonderful results with combining stuffs like what we learned last week ‘wiggle letters’ or ‘draw with images ‘ some sort of things like that. 
+In this week we were introduced to speech.js, a really exciting function. Basically it will translate your speech into text in the screen, obviously it will create some wonderful results by combining stuffs like what we learned last week ‘wiggle letters’ or ‘draw with images ‘ some things like that. 
 
-Based on the code from shuchen, karen tried to create the code by herself. In this process she created a really interesting and cool one accidentally!(accident sometimes bring surprise!!)(I REALLY LIKE THIS ONE! and saw lots of potentials which could be further developed to something really fun! like it can be combined with projector and presented how many nonsenses we spoke everyday!)
+Based on the code from shuchen, Karen tried to create the code by herself. In this process she created a fascinating and cool one accidentally!(accident sometimes bring surprise!!)(I REALLY LIKE THIS ONE! and saw lots of potentials which could be further developed to something really fun! like it can be combined with projector and presented how many nonsenses we spoke everyday!)
 
 <img width="597" alt="屏幕快照 2020-10-20 上午1 24 37" src="https://user-images.githubusercontent.com/68723373/96490176-0c30dd00-1273-11eb-8faa-0ce61b74039d.png">
 
@@ -164,7 +164,7 @@ function gotSpeech(){
 }
 
 
-It inspired me that what if I use speech rather than text for the input of my collage machine ? Directly mix the search function with speech.js together is not working, I need to let input = speechRec.resultValue , and a function like keyword matching?? ,and let word = speechRec.resultValue, word match with speech, and pop images. 
+It inspired me that what if I use speech rather than text to input my collage machine? Directly mix the search function with speech.js together is not working, I need to let input = speechRec.resultValue , and a function like keyword matching??, and let word = speechRec.resultValue, word match with speech, and pop images. 
 
 let lang = navigator.language || 'en-US';
 let speechRec = new p5.SpeechRec(lang, gotSpeech);
@@ -243,12 +243,10 @@ function wordMatch(speech) {
 It failed. 'Uncaught ReferenceError: keyword is not defined at wordMatch (speechmatch.js:70)'
 something wrongs with the match function. And obviously I couldn't use the specific keyword for 'let words' because I had nearly 200-300 keywords and 94 images !! I needed to find some more efficient method. 
 
-For my 3d library, I followed the tutorial in youtube to learn how to input model with three.js. but also failed...
+For my 3d library, I followed the tutorial in youtube to learn how to input a model with three.js. but also failed...
 
 'Failed to load resource: the server responded with a status of 404 (Not Found)'
 
-Then I looked back to the tutorial and noticed he put his three.model.js into the build folder. Initially I thought I could change the folder name and just typed it in './xxx.obj', but seemed like everyone all used the folder name 'build'. Therefore I put it in the 'build' folder, and it worked!!
+Then I looked back to the tutorial and noticed he put his three.model.js into the build folder. Initially, I thought I could change the folder name and just typed it in './xxx.obj', but it seemed like everyone all used the folder name 'build'. Therefore I put it in the 'build' folder, and it worked!!
 
 my code: https://github.com/yanghu199/test/tree/main/obj-test-norotate
-
-
