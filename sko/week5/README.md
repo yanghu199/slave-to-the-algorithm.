@@ -2,7 +2,7 @@ Week5
 
 Emotion mapping machine
 
-I was surrounded by these substantial wonderful ideas on the presentation day. Everyone did lots of relative research and interpreted their system clearly. It was so interesting to see many of us decided to focus on the emotion mapping machine yet the specific functions and working theory of the system were totally different. The significance and idea of Hun’s machine and JinNi’s process and outcomes might have similarities with mine. me and hun both concentrated on emotion visualization, however, the input of his machine is brainwave data which sounds more scientifically. My machine will more follow with interest in the narrative function of the user’s personal belongings.
+I was surrounded by these substantial wonderful ideas on the presentation day. Everyone did lots of relative research and interpreted their system clearly. It was so interesting to see many of us decided to focus on the emotion mapping machine yet the specific functions and working theory of the system were totally different. The significance and idea of Hun’s machine and JinNi’s process and outcomes might have similarities with mine. Me and hun both concentrated on emotion visualization; however, the input of his machine is brainwave data which sounds more scientifically. My machine will more follow with interest in the narrative function of the user’s personal belongings.
 
 wunderkammer
 
@@ -15,12 +15,12 @@ In Karen’s feedback, she mentioned the “wunderkammer”,  or cabinets of cur
 
 https://www.moma.org/calendar/exhibitions/272?
 
-wunderkammer and my system both presents objects, yet mine is more focus on significance and emotion rather than curiosities and unusual items. 
+Wunderkammer and my system both present objects, yet mine focuses more on significance and emotion than curiosities and unusual items. 
 
 
 practicable plan
 
-The initial function of this machine involved online substances library, search bar and AR. To translate the 2d photo into 3d modeling, the critical component of this process is combined the system with 3d photoscan or Autodesk 123D Catch. And I also find that there are a couple of applications in App Store which support scanning objects and generate 3d modeling automatically. (Qlone) the problem is how to connect these scanning applications with my website and data library.
+The initial function of this machine involved an online substances library, search bar and AR. To translate the 2d photo into 3d modeling, the critical component of this process is combined the system with 3d photoscan or Autodesk 123D Catch. And I also find that there are a couple of applications in App Store which support scanning objects and generate 3d modeling automatically. (Qlone) the problem is how to connect these scanning applications with my website and data library.
 
 research & inspiration of 3d items library
 
@@ -35,7 +35,7 @@ Giulietta (7/24), 2010
 
 'Sylvie Fleury is a Swiss contemporary pop artist known for her installations, sculpture, and mixed media. Her work generally depicts objects with sentimental and aesthetic attachments in consumer culture, as well as the paradigm of the new age, with much of her work specifically addressing issues of gendered consumption and the fetishistic relationships to consumer objects and art history'
 
-In one of her artwork 'Eye Shadows', she questioned herself :' Am I unhealthily obsessed with painting my face? Or maybe I'm not appreciating how much beauty exists within the product itself? Are haul photos making me high? Do I have a Tom Ford lipstick fetish? Am I assigning value and meaning to bronzer based on its shiny black package? Do the round symmetrical shapes of the palettes signify some perfection I'll never attain?' It reminded me a sentence for decribing this emotion: 'the sex appeal of the inorganic', frmo the philosopher and critic Walter Benjamin. It refered to the desire brought on by looking at clothing. Clothes and other bodily accoutrements—from shoes to chairs and tables—are thus extensions of the body. These prostheses can become the subject of narcissistic obsession, or consumerist fetishes. Works of art are also alluring, the ultimate super-commodity, perhaps. Vital perfection summons up the body, via the absence of any actual figurative elements, blurring the boundary between living entities and inert objects. 
+In one of her artwork 'Eye Shadows', she questioned herself :' Am I unhealthily obsessed with painting my face? Or maybe I'm not appreciating how much beauty exists within the product itself? Are haul photos making me high? Do I have a Tom Ford lipstick fetish? Am I assigning value and meaning to bronzer based on its shiny black package? Do the round symmetrical shapes of the palettes signify some perfection I'll never attain?' It reminded me of a sentence for describing this emotion: 'the sex appeal of the inorganic', from the philosopher and critic Walter Benjamin. It referred to the desire brought on by looking at clothing. Clothes and other bodily accouterments—from shoes to chairs and tables—are thus extensions of the body. These prostheses can become the subject of a narcissistic obsession, or consumerist fetishes. Works of art are also alluring, the ultimate super-commodity, perhaps. Vital perfection summons up the body, via the absence of any actual figurative elements, blurring the boundary between living entities and inert objects. 
 
 reference: https://www.moma.org/artists/7674
 http://www.artnet.com/artists/sylvie-fleury/
@@ -43,9 +43,9 @@ http://www.artnet.com/artists/sylvie-fleury/
 
 New idea
 
-Instead of the search function, it seems like a virtual mirror which can project participant’s inner desire onto a mixture items that generated by the system sounds more interesting. basically the mirror support voice input so users can just need to talk with it and the system will match the keyword with the items from the data library and select some of their pieces to recombine them randomly. Users will receive a mixture item(maybe looks abstract and undistinguished) which visualize their inner desire. 
+Instead of the search function, it seems like a virtual mirror which can project participant’s inner desire onto a mixture items that generated by the system sounds more interesting. Basically the mirror support voice input so users can just need to talk with it and the system will match the keyword with the items from the data library and select some of their pieces to recombine them randomly. Users will receive a mixture item(maybe looks abstract and undistinguished) that visualize their inner desire. 
 
-Research about new idea
+Research about the new idea
 
 Mix media sculptures
 
@@ -55,7 +55,6 @@ https://www.tate.org.uk/tate-etc/issue-9-spring-2007/microtate-9-angel-anarchy
 
 https://www.tate.org.uk/art/artworks/self-leopardskin-nuclear-bomber-no-2-t066958
 
-Prototype of mirror(visual)
+The prototype of mirror(visual)
 
 ![mirror2](https://user-images.githubusercontent.com/68723373/96470677-1fd34800-1261-11eb-82ea-6787dc24dab9.png)
-
