@@ -7,11 +7,11 @@ I made a quick sketch model for my search function library:
 
 my code: https://github.com/yanghu199/test/tree/main/search-function
 
-Basically it provides the keyword match function; hence when users typing words, the systems will match the keyword with images in data library automatically
+Basically it provides the keyword match function; hence when users typing words, the systems will match the keyword with images in the data library automatically
 
 Karen gave me the feedback which I found the link was really beneficial!
 “This project could work well with the constructor class we covered in class to track the model and terms associated etc. Also the Speech to text library for p5js: https://github.com/IDMNYU/p5.js-speech (Links to an external site.) is a great find!”
-I also found a really useful link for my reading pages:https://brm.io/matter-js/,  which is a 2d physics engine for the web. The sample of “ball pool”inspired me that I can use item images instead of  the geometry shapes. I will definitely explore it after I finish 3d stuff.
+I also found a really useful link for my reading pages:https://brm.io/matter-js/,  which is a 2d physics engine for the web. The sample of “ball pool” inspired me to use item images instead of the geometry shapes. I will definitely explore it after I finish 3d stuff.
 
 Pseudo-code
 
@@ -39,7 +39,7 @@ Use credit card
 ELSE IF limit of credit card<0
 END IF stop shopping!!!
 
-after the warm-up excise which was able to provide the further understanding of what pseudo-code meant, I attempted to interpret the whole working process of my system:
+after the warm-up excise which was able to provide a further understanding of what pseudo-code meant, I attempted to interpret the whole working process of my system:
 
 For the welcome page:
 let img,video,float1;
@@ -81,9 +81,9 @@ function mousePressed() {
 
 I’m not sure it works but I just attempted to use code to achieve the ideal animation and outcome.
 
-In the afternoon class we learned a couple of interactive coding which were playing with typography. Karen show us how amazing the coding is again!
+In the afternoon class we learned a couple of interactive coding which were playing with typography. Karen shows us how amazing the coding is again!
 
-sketch will allow us to 'paint with type'
+the sketch will allow us to 'paint with type'
 
 PFont myfont;// initiating a font va riable
 int randchar,randSize; //initiating our variables
@@ -219,7 +219,7 @@ class Wiggle {
  }
 }
 
-For my voice library, I tried to import my local obj file and play with the angle of ratation. Meanwhile, I collected some images and recordings from my friends and strangers on Instagram. It's really interesting and meaningful to hear someone interpreted and described their memories and stories behind those items and what kind of emotion did the item brings to them. 
+For my voice library, I tried to import my local obj file and play with the angle of the ratation. Meanwhile, I collected some images and recordings from my friends and strangers on Instagram. It's really interesting and meaningful to hear someone interpret and describe their memories and stories behind those items and what kind of emotion the item brings to them. 
 
 <img width="1362" alt="屏幕快照 2020-10-14 下午8 24 21" src="https://user-images.githubusercontent.com/68723373/96479661-d76d5780-126b-11eb-8e7a-3382d0165c03.png">
 
