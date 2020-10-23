@@ -5,15 +5,15 @@ week9
 <img width="1014" alt="屏幕快照 2020-10-20 下午3 42 40" src="https://user-images.githubusercontent.com/68723373/96555915-ef37f080-12ea-11eb-8022-70a42b0d2c87.png">
 
 
-In the morning class we needed to upload our working process one by one with Karen and got suggestions. For my emotion mapping website, the latest version is including  the collage machine, 3d items library and sound library. Through this website I tried to explore the relationship between people and their personal belongings. Compared with the initial idea, I gave up the ar function because it needs to recognize the environment and scan items to analyze the personality, which needs enormous data to support that. 
+In the morning class we needed to upload our working process one by one with Karen and got suggestions. For my emotion mapping website, the latest version is including the collage machine, 3d items library and sound library. Through this website I tried to explore the relationship between people and their personal belongings. Compared with the initial idea, I gave up the ar function because it needs to recognize the environment and scan items to analyze the personality, which requires enormous data to support that. 
 
-For the 3d library, I’m still keep building the 3d modeling in c4d. And I also tried to explore the method that can display 3d stuff in html. Three.js is great, however, the size of my 3d file is nearly 600mb so it’s too big for loading and rendering. then I started to find a more easier and faster way to display and 360 degree panorama gram would help! And it also support camera control!
+For the 3d library, I’m still keep building the 3d modeling in c4d. And I also tried to explore the method that can display 3d stuff in html. Three.js is great. However, the size of my 3d file is nearly 600mb so it’s too big for loading and rendering. Then I started to find a easier and faster way to display and 360 degree panorama gram would help! And it also supports camera control!
 
-For the collage machine, the initial idea was created a search bar function that users could import their feelings with text and some images would jump out. last week we learned the basic function of speech.js and now I’m trying to combine the speech.js with search function. So when people started to say something about their feelings, the system will recognize the keywords and match them with images and these images will be overlapped when people are saying. So I tried to remix the coding but obviously it didn’t work and now I’m debugging it.
+For the collage machine, the initial idea was created a search bar function that users could import their feelings with text and some images would jump out. Last week we learned the primary function of speech.js and now I’m trying to combine the speech.js with search function. When people started to say something about their feelings, the system will recognize the keywords and match them with images and these images will be overlapped when people are saying something. So I tried to remix the coding but obviously it didn’t work and now I’m debugging it.
 
-For the sound library, i’m collecting short answers from others that respond two questions:Do you have emotional attachment with your personal items? And What kind of emotion or feeling do you have to them? And I will make a 3d model for their items. So when people click the model, it will start to play the recording.
+For the sound library, i’m collecting short answers from others that respond to two questions: Do you have an emotional attachment with your personal items? And What kind of emotion or feeling do you have for them? And I will make a 3d model for their items. So when people click the model, it will start to play the recording.
 
-Karen suggested that it’s better to upload the original obj file into the web. In order to achieve that, I needed to reduce the size of all models. The panorama gram could be the plan B just in case the model didn’t work. In group discussion, KaiQi had some visual advice for the collage machine. Rather than multi-canvas, she thought a main and center canvas could concentratedly present the images better and had a more distinct structure. 
+Karen suggested that it’s better to upload the original obj file into the web. To achieve that, I needed to reduce the size of all models. The panorama gram could be the plan B just in case the model didn’t work. In the group discussion, KaiQi had some visual advice for the collage machine. Rather than multi-canvas, she thought a main and center canvas could concentratedly present the images better and had a more distinct structure. 
 
 <img width="384" alt="屏幕快照 2020-10-20 下午4 33 16" src="https://user-images.githubusercontent.com/68723373/96584181-7186db80-1310-11eb-96cd-a1fc1ef54d7f.png">
 the final visual prototype of collage machine
@@ -23,7 +23,7 @@ that's looked much better!
 
 Afternoon class 
 
-Multipul canvas
+Multiple canvas
 
 let pg;
 function setup() {
@@ -54,7 +54,7 @@ function draw() {
   text('Slave to the Algorithm', 50, 0,  width, height/2);
 }
 
-I thought this multi-canvas code was especially worked well with others who used the motion sensor(one vision for camera and another for visualization). 
+I thought this multi-canvas code was especially worked well with others who used the motion sensor(one vision for the camera and another for visualization). 
 
 
 Split text
@@ -81,7 +81,7 @@ function draw() {
 
 3d library development
 
-I already imported a small obj file with three.js, the next step was tried to increase the control function. Actually I found a couple of coding that supported the first person camera & keyboard control and I thought I could combined them with mine.
+I already imported a small obj file with three.js, the next step was to try to increase the control function. Actually I found a couple of coding that supported the first-person camera & keyboard control and I thought I could combine them with mine.
 
 https://github.com/mrdoob/three.js/blob/master/examples/js/controls/FirstPersonControls.js
 https://github.com/brianpeiris/three-firstperson-vr-controls
@@ -330,7 +330,6 @@ import * as Three from './build/three.module.js';
  Failed!! 'Failed to load resource: Uncaught SyntaxError: Cannot use import statement outside a module'
  what's that actually meant? so I googled this syntax error and found the method could fix it:https://blog.csdn.net/qq_43340929/article/details/101862294
  https://stackoverflow.com/questions/58211880/uncaught-syntaxerror-cannot-use-import-statement-outside-a-module-when-import
- 
  
       
       
